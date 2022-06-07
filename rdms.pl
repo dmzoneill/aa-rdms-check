@@ -46,7 +46,7 @@ my $retcode = $curl->perform;
 if ($retcode != 0) {
     print("An error happened: $retcode ".$curl->strerror($retcode)." ".$curl->errbuf."\n");
     print("$response_body\n");
-    system("notify-send \"AA database size alert\" \"Unable to check grafana\"");
+    system("notify-send \"AA database size alert\" \"Unable to check prometheus\"");
     exit 1;
 }
 
