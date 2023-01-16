@@ -1,4 +1,4 @@
-name: aa-rdms-check
+name: CICD
 
 on:
   push:
